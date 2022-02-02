@@ -1,0 +1,24 @@
+<nav>
+    <a href="/">main</a>
+    <a href="/register">register</a>
+    <a href="/login">login</a>
+    <a href="/admin">admin</a>
+    <a href="/logout">{{logout}}</a>
+</nav>
+
+<div id="main">
+    <h1>Login page</h1>
+    <div id="form">
+        <form id="logowanie" method="POST" action="/login_check">
+            <label>
+                login:<input type="text" class="input" name="login" id="login">
+            </label><br><br>
+            <label>
+                password:<input type="text" class="input" name="pass" id="password">
+            </label>
+            <br /><br />
+            <input type="submit" value="Submit">
+    </div>
+    </form>
+</div>
+</div>

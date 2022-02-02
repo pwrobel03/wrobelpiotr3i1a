@@ -1,0 +1,30 @@
+<body id="body">
+
+</body>
+<nav>
+    <a href="/">main</a>
+    <a href="/register">register</a>
+    <a href="/login">login</a>
+    <a href="/admin">admin</a>
+    <a href="/logout">{{logout}}</a>
+</nav>
+<nav class="navbar">
+    <a href="/sort">sort</a>
+    <a href="/gender">gender</a>
+    <a href="/show">show</a>
+</nav>
+
+<div class="content">
+    <table class="show">
+        {{#each dane}}
+        <tr>
+            <td class="td1">id: {{id}} </td>
+            <td class="td2">user: {{login}} - {{pass}} </td>
+            <td class="td3">uczeń: <input type="checkbox" disabled="disabled" {{uczen}}> </td>
+            <td class="td4">wiek: {{wiek}} </td>
+            <td class="td5">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+</body>

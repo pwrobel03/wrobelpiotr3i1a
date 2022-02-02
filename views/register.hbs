@@ -1,0 +1,40 @@
+<nav>
+    <a href="/">main</a>
+    <a href="/register">register</a>
+    <a href="/login">login</a>
+    <a href="/admin">admin</a>
+    <a href="/logout">{{logout}}</a>
+</nav>
+<div id="main">
+    <h1>Register page</h1>
+    <div id="form">
+        <form method="POST" action="/new_registered">
+            <label>
+                login:<input type="text" class="input" name="login" id="login"></p>
+            </label>
+            <label>
+                <p>password:<input type="text" class="input" name="pass" id="password"></p>
+            </label>
+            <label>
+                Wiek:<select name="wiek" class="input" id="wiek" required>
+                    {{#each wiek}}
+                    <option value="{{i}}">{{i}}</option>
+                    {{/each}}
+                </select></p>
+            </label>
+            <label>
+                Uczeń?:<input class="input_reg" type="checkbox" name="uczen" value="checked"></p>
+            </label>
+            <label>
+
+                Płeć:
+                <div class="input_reg">
+                    <input type="radio" name="plec" value="k"><label>K</label>
+                    <label><input type="radio" name="plec" value="m"><label>M</label>
+                </div>
+
+            </label><br /><br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>

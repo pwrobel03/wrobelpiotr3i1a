@@ -1,0 +1,31 @@
+<nav>
+    <a href="/">main</a>
+    <a href="/register">register</a>
+    <a href="/login">login</a>
+    <a href="/admin">admin</a>
+    <a href="/logout">{{logout}}</a>
+</nav>
+<nav class="navbar">
+    <a href="/sort">sort</a>
+    <a href="/gender">gender</a>
+    <a href="/show">show</a>
+</nav>
+<div id="body" class="content">
+    <table class="gender">
+        {{#each table1}}
+        <tr>
+            <td class="td1">id: {{id}} </td>
+            <td class="td2">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+    <br />
+    <table class="gender">
+        {{#each table2}}
+        <tr>
+            <td class="td1">id: {{id}} </td>
+            <td class="td2">płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
